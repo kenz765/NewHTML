@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Response</title>
+    <script>
+        function checkAnswer() {
+            const userAnswer = document.getElementById("answer").value.toLowerCase();
+            const positiveAnswers = ["oo", "huo", "meron", "may ara"];
+            const response = document.getElementById("response");
+
+            if (positiveAnswers.includes(userAnswer)) {
+                response.textContent = "Ako man";
+            } else {
+                response.textContent = "Mangayo pako tani pay ti cge nalang-_- goodmorning😑";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>May gcash ka?</h2
+    <h6>Code by ken</h6>
+    <input type="text" id="answer" placeholder="Type your answer here">
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="response"></p>
+</body>
+</html>
